@@ -1,3 +1,7 @@
+cpp/.idea/
+cpp/CMakeLists.txt
+*.exe
+
 # Windows image file caches
 Thumbs.db
 ehthumbs.db
