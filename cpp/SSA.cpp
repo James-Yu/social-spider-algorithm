@@ -23,8 +23,10 @@ double Vibration::intensity_attenuation(double attenuation_factor, double distan
 }
 
 double Vibration::fitness_to_intensity(double fitness) {
-    return  log(1.0 / (fitness + 1E-100) + 1.0);
+    return  log(1.0 / (fitness - C) + 1.0);
 }
+
+double Vibration::C = -1E-100;
 
 Spider::Spider(const Position& position) :
         position(position), inactive_deg(0) {

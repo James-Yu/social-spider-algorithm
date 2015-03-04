@@ -49,6 +49,7 @@ class Vibration {
 public:
     double intensity;
     Position position;
+    static double C;
 
     Vibration() { }
     Vibration(const Position& position);

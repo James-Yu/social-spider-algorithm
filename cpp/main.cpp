@@ -1,4 +1,4 @@
-#include "SSA/SSA.h"
+#include "SSA.h"
 
 using namespace std;
 
