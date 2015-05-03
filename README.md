@@ -31,10 +31,16 @@ You may want to edit the source code to adapt the algorithm to solve your optimi
     
 The Python implementation of SSA is vectorized. No loop is conducted on the python-level during each iteration of the algorithm. The objective function shall accept all solutions in the population per invoke.
 
+### MATLAB
+
+    func = @(x)sum(x.^2, 2);
+    SSA(func, 30, 100, 10000, 25, 1, 0.7, 0.1);
+    
+The MATLAB implementation of SSA is a copy of the Python code. It is highly vectorized. The objective function shall accept all solutions in the population per invoke. The default matrix shape is popsize*dimension.
+
 ### More implementations TBD
 
 * Java
-* MATLAB
 
 ## Difference
 

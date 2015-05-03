@@ -93,6 +93,7 @@ class SSA(object):
             self.position = self.position + movement
             
         if show_info:
+            elapsed_time = time.clock() - self.start_time
             print("=" * 62)
             print(repr(iteration).rjust(5), "%.4e" % self.g_best, "%.4e" % np.min(spider_fitness),
                   "%.4e" % base_distance, "%.4e" % np.mean(distance), 
