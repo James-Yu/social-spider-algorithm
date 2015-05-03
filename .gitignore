@@ -1,6 +1,7 @@
 cpp/.idea/
 cpp/CMakeLists.txt
 *.exe
+*.asv
 
 # Windows image file caches
 Thumbs.db
